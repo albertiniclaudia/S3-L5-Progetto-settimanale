@@ -10,6 +10,8 @@ body {
 .schermo {
     border: 2px solid #fb6311;
     height: 3rem;
+    background-color: #fbfb80;
+
 }
 
 .container {
@@ -28,4 +30,9 @@ body {
     width: 20rem;
     height: 14rem;
     padding-top: 1rem;
+}
+
+button {
+    background-color: #fbfb80;
+    font-family: 'Macondo', cursive;
 }
