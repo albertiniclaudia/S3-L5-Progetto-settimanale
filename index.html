@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calcolatrice</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <h1>Calcolatrice</h1>
+
+        <div class="container">
+            <div class="schermo">
+                <p><span id="schermo"></span></p>
+            </div>
+
+            <div class="pulsanti">
+                <button type="button" onclick="addNum('1')"> 1 </button>
+                <button type="button" onclick="addNum('2')"> 2 </button>
+                <button type="button" onclick="addNum('3')"> 3 </button>
+                <button type="button" onclick="addOper('+')"  id="piu"> + </button>
+                <button type="button" onclick="addNum('4')"> 4 </button>
+                <button type="button" onclick="addNum('5')"> 5 </button>
+                <button type="button" onclick="addNum('6')"> 6 </button>
+                <button type="button" onclick="addOper('-')" id="meno"> - </button>
+                <button type="button" onclick="addNum('7')"> 7 </button>
+                <button type="button" onclick="addNum('8')"> 8 </button>
+                <button type="button" onclick="addNum('9')"> 9 </button>
+                <button type="button" onclick="addOper('x')" id="per"> x </button>
+                <button type="button" onclick="cTot()" id="cancTot" > CT </button>
+                <button type="button" onclick="addNum('0')"> 0 </button>
+                <button type="button" onclick="addPunto()" id="punto"> . </button>
+                <button type="button" id="fratto" onclick="addOper('/')"> / </button>
+                <button type="button" id="canc1" onclick="canc()"> C </button>
+                <button type="button" id="elevato" onclick="addOper('^')"> X<sup>n</sup> </button>
+                <!-- <button type="button" id="radice" onclick="addOper('R')"> &#8730; </button> -->
+                <button type="button" id="risultato" onclick="ris()"> = </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
